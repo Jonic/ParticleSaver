@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D86EB85E16B4A6EC0038319D /* www in Resources */ = {isa = PBXBuildFile; fileRef = D86EB85D16B4A6EC0038319D /* www */; };
+		D86EB86216B4AA410038319D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86EB86016B4A9830038319D /* WebKit.framework */; };
 		D8DBAFFC16B47A7800598FF8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DBAFFB16B47A7800598FF8 /* Cocoa.framework */; };
 		D8DBAFFE16B47A7800598FF8 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DBAFFD16B47A7800598FF8 /* ScreenSaver.framework */; };
 		D8DBB00816B47A7800598FF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8DBB00616B47A7800598FF8 /* InfoPlist.strings */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D86EB85D16B4A6EC0038319D /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ParticlesSaver/www; sourceTree = "<group>"; };
+		D86EB86016B4A9830038319D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		D8DBAFF816B47A7800598FF8 /* ParticlesSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticlesSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DBAFFB16B47A7800598FF8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D8DBAFFD16B47A7800598FF8 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86EB86216B4AA410038319D /* WebKit.framework in Frameworks */,
 				D8DBAFFC16B47A7800598FF8 /* Cocoa.framework in Frameworks */,
 				D8DBAFFE16B47A7800598FF8 /* ScreenSaver.framework in Frameworks */,
 			);
@@ -43,6 +48,7 @@
 		D8DBAFEB16B47A7700598FF8 = {
 			isa = PBXGroup;
 			children = (
+				D86EB85D16B4A6EC0038319D /* www */,
 				D8DBB00316B47A7800598FF8 /* ParticlesSaver */,
 				D8DBAFFA16B47A7800598FF8 /* Frameworks */,
 				D8DBAFF916B47A7800598FF8 /* Products */,
@@ -60,6 +66,7 @@
 		D8DBAFFA16B47A7800598FF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D86EB86016B4A9830038319D /* WebKit.framework */,
 				D8DBAFFB16B47A7800598FF8 /* Cocoa.framework */,
 				D8DBAFFD16B47A7800598FF8 /* ScreenSaver.framework */,
 				D8DBAFFF16B47A7800598FF8 /* Other Frameworks */,
@@ -161,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8DBB00816B47A7800598FF8 /* InfoPlist.strings in Resources */,
+				D86EB85E16B4A6EC0038319D /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +231,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -247,7 +255,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -297,6 +306,7 @@
 				D8DBB01116B47A7800598FF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
