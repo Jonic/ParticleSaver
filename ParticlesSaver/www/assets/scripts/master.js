@@ -43,10 +43,11 @@ Particle = Class.extend({
     var self;
     self = this;
     this.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-    this.size = rnd(50);
+    this.size = Math.round(rnd(50));
+    this.half = Math.round(this.size / 2);
     this.position = {
-      x: particlesOrigin.x - (self.size / 2),
-      y: particlesOrigin.y - (self.size / 2)
+      x: particlesOrigin.x - this.half,
+      y: particlesOrigin.y - this.half
     };
     this.velocity = {
       x: rnd(10) - 5,
@@ -61,7 +62,7 @@ Particle = Class.extend({
     if (this.withinCanvasBounds()) {
       context.fillStyle = this.color;
       context.beginPath();
-      context.arc(this.position.x, this.position.y, this.size / 2, 0, Math.PI * 2, true);
+      context.arc(this.position.x, this.position.y, this.half, 0, Math.PI * 2, true);
       context.closePath();
       context.fill();
     }
